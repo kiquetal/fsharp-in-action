@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Compile Include="Program.fs" />
+    <Compile Include="ChapterTwo.fs" />
   </ItemGroup>
 
 </Project>
