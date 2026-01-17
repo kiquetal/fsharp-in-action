@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linker>
+  <assembly fullname="fsharp-in-action">
+    <resource name="FSharpSignatureData.fsharp-in-action" action="remove"></resource>
+    <resource name="FSharpSignatureCompressedData.fsharp-in-action" action="remove"></resource>
+    <resource name="FSharpSignatureDataB.fsharp-in-action" action="remove"></resource>
+    <resource name="FSharpSignatureCompressedDataB.fsharp-in-action" action="remove"></resource>
+    <resource name="FSharpOptimizationData.fsharp-in-action" action="remove"></resource>
+    <resource name="FSharpOptimizationCompressedData.fsharp-in-action" action="remove"></resource>
+    <resource name="FSharpOptimizationDataB.fsharp-in-action" action="remove"></resource>
+    <resource name="FSharpOptimizationCompressedDataB.fsharp-in-action" action="remove"></resource>
+    <resource name="FSharpOptimizationInfo.fsharp-in-action" action="remove"></resource>
+    <resource name="FSharpSignatureInfo.fsharp-in-action" action="remove"></resource>
+  </assembly>
+</linker>
