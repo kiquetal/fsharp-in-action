@@ -1,13 +1,29 @@
 # Running F# Code and Managing Chapter Files
 
-## 1. How to Execute the Project
-This project is a .NET Console Application. The standard way to run it is using the .NET CLI:
+## 1. Building and Running the Project
+This project uses the .NET CLI. Here are the primary commands:
 
+### Build the Project
+To compile the project and check for errors without running it:
+```bash
+dotnet build
+```
+
+### Run the Project
+To build and execute the project:
 ```bash
 dotnet run
 ```
+Since this project uses command-line arguments to select chapters, you can pass them after `--`:
+```bash
+dotnet run -- 2
+```
 
-This command restores dependencies, builds the project, and executes the compiled output (the file containing the entry point).
+### Clean the Project
+To remove build artifacts (bin and obj folders):
+```bash
+dotnet clean
+```
 
 ## 2. The Importance of File Order
 In F#, **compilation order matters**. The compiler processes files from top to bottom.
@@ -15,7 +31,7 @@ In F#, **compilation order matters**. The compiler processes files from top to b
 - The file containing the `EntryPoint` (or top-level executable code) should typically be the **last** file in the list.
 
 **Current Observation:**
-In your `fsharp-in-action.fsproj`, `Program.fs` is listed *before* `ChapterTwo.fs`. If you want `Program.fs` to run code defined in `ChapterTwo.fs`, you must move `ChapterTwo.fs` above `Program.fs`.
+In your `fsharp-in-action.fsproj`, `ChapterTwo.fs` is correctly listed **before** `Program.fs`, allowing `Program.fs` to access the `ChapterTwo` module.
 
 ## 3. Options for Creating and Running Files for Every Chapter
 
