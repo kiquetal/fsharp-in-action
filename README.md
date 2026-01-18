@@ -7,6 +7,14 @@ This repository follows the structure and concepts presented in the book **"F# i
 1. **Introducing F#**
     - Provides an overview of F# as a general-purpose language for building robust and performant systems. Covers the F# mental model, its focus on data and functions, and why it is a valuable tool for .NET developers.
 2. **Hands on with F#**
+
+Executing dotnet fsi = console
+
+End the sentence with ;; to evaluate the expression
+
+
+
+ 
 3. **F# Syntax Basics**
 4. **F# Fundamentals**
 5. **Shaping data**
