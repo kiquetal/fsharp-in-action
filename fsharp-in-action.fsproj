@@ -9,6 +9,7 @@
   <ItemGroup>
     <Compile Include="ChapterTwo.fs" />
     <Compile Include="Program.fs" />
+    <None Include="scratchboard.fsx" />
 
   </ItemGroup>
 
